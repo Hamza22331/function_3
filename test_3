@@ -1,0 +1,566 @@
+def test_return_correct_dict_inside_list():
+    # Complete the function with your test cases
+    file_name = "characters-test.csv"
+
+    # test that character_occupation_list returns a correct dictionary inside the list (3 different test cases required)
+    first_test_case = load_data.character_occupation_list(file_name, 'AT')
+    first_dict = first_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = first_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # SECOND TEST ~~~~~~~~~~~~~~~
+    second_test_case = load_data.character_occupation_list(file_name, 'WA')
+    first_dict = second_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = second_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # THIRD TEST ~~~~~~~~~~~~~
+    third_test_case = load_data.character_occupation_list(file_name, 'VF')
+    first_dict = third_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = third_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # test that character_strength_list returns a correct dictionary inside the list  (3 different test cases required)
+
+    # FIRST TEST~~~~~~~~~~~~~~~
+    fourth_test_case = load_data.character_strength_list(file_name, (0, 10))
+    first_dict = fourth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = fourth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # SECOND TEST~~~~
+    fifth_test_case = load_data.character_strength_list(file_name, (10, 20))
+    first_dict = fifth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = fifth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # THIRD TEST~~~~
+    sixth_test_case = load_data.character_strength_list(file_name, (20, 30))
+    first_dict = sixth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = sixth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # test that character_luck_list returns a correct dictionary inside the list  (3 different test cases required)
+
+    # TEST ONE~~~~~~~~~~~~~
+    seventh_test_case = load_data.character_luck_list(file_name, 0.4)
+    first_dict = seventh_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = seventh_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # SECOND TEST~~~~~~~~~~
+    eigth_test_case = load_data.character_luck_list(file_name, 1)
+    first_dict = eigth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = eigth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # TEST 3~~~~~~~~~~~~~~~
+    ninth_test_case = load_data.character_luck_list(file_name, 2)
+    first_dict = ninth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = ninth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # test that character_weapon_list returns a correct dictionary inside the list (3 different test cases required)
+
+    # TEST ONE~~~~~~~~~~~
+    tenth_test_case = load_data.character_weapon_list(file_name, "Dagger")
+    first_dict = tenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # checking for equality in last
+    last_dict = tenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # TEST TWO~~~~~~~~~~~
+    eleventh_test_case = load_data.character_weapon_list(file_name, "Club")
+    first_dict = eleventh_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # checking for equality in last
+    last_dict = eleventh_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # TEST 3 ~~~~~~~~~~~~~
+    twelfth_test_case = load_data.character_weapon_list(file_name, "Staff")
+    first_dict = twelfth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # checking for equality in last
+    last_dict = twelfth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # test that load_data returns a correct dictionary inside the list (6 different test cases required)
+    thirteenth_test_case = load_data.load_data(file_name, ("All", "xyz"))
+    first_dict = thirteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = thirteenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # TEST TWO ~~~~~~~
+    fourteenth_test_case = load_data.load_data(file_name, ("Weapon", "Club"))
+    first_dict = fourteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # checking for equality in last
+    last_dict = fourteenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Luck", "Armor"])
+
+    # TEST 3~~~~~~~~~~
+    fifteenth_test_case = load_data.load_data(
+        file_name, ("Strength", (20, 30)))
+    first_dict = fifteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = fifteenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # TEST FOUR~~~~~~~~~~
+    sixteenth_test_case = load_data.load_data(file_name, ("Luck", 0.4))
+    first_dict = sixteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = sixteenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility",
+                "Stamina", "Personality", "Intelligence", "Armor", "Weapon"])
+
+    # TEST FIVE~~~~~~~~~
+    seventeenth_test_case = load_data.load_data(
+        file_name, ("Occupation", 'AT'))
+    first_dict = seventeenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = seventeenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # SIXTH TEST ~~~~~~~~~~~~~~~
+    eighteenth_test_case = load_data.load_data(
+        file_name, ("Occupation", 'VF'))
+    first_dict = eighteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # checking for equality in last
+    last_dict = seventeenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon"])
+
+    # test that calculate_health returns a correct dictionary inside the list  (3 different test cases required)
+
+    # TEST ONE
+    nineteenth_test_case = load_data.calculate_health(
+        load_data.load_data(file_name, ("all", -1)))
+    first_dict = nineteenth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon", "Health"])
+
+    # checking for equality in last
+    last_dict = nineteenth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Weapon", "Health"])
+
+    # TEST TWO~~~~~~
+    twentieth_test_case = load_data.calculate_health(
+        load_data.character_occupation_list(file_name, 'AT'))
+    first_dict = twentieth_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Strength", "Agility", "Stamina", "Personality",
+                "Intelligence", "Luck", "Armor", "Weapon", "Health"])
+
+    # checking for equality in last
+    last_dict = twentieth_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(last, ["Strength", "Agility", "Stamina", "Personality",
+                "Intelligence", "Luck", "Armor", "Weapon", "Health"])
+
+    # TEST 3~~~~~~~~~
+    twenty_first_test_case = load_data.calculate_health(
+        load_data.character_weapon_list(file_name, "Staff"))
+    first_dict = twenty_first_test_case[0]
+    first = []
+    i = 0
+    while i < len(first_dict):
+    word = list(first_dict.keys())[i]
+    word = str(word.strip())
+    first.append(str(word))
+    i += 1
+    # checking for equality in 1st
+    check.equal(first, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Health"])
+
+    # checking for equality in last
+    last_dict = twenty_first_test_case[-1]
+    last = []
+    i = 0
+    while i < len(last_dict):
+    word = list(last_dict.keys())[i]
+    word = str(word.strip())
+    last.append(str(word))
+    i += 1
+    check.equal(first, ["Occupation", "Strength", "Agility", "Stamina",
+                "Personality", "Intelligence", "Luck", "Armor", "Health"])
+
+    check.summary()
+    return
